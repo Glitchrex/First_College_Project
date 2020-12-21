@@ -1,0 +1,175 @@
+html::-webkit-scrollbar {
+  display: none;
+}
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.mslogo
+{
+    background-image: url("../images/mseclogo.png");
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size:30%;
+}
+
+/*Contact us page css*/
+.contactimg{
+  font-family: Arial, Helvetica, sans-serif;
+  /*Photo by Adam Solomon on Unsplash*/
+  background-image: url("../Images/adam-solomon-WHUDOzd5IYU-unsplash.jpg");
+  position: fixed;
+}
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 98%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 3px;
+  margin-bottom: 8px;
+  resize: vertical;
+  opacity: 0.7;
+  margin-bottom: 4%;
+}
+input[type=email] {
+  width: 98%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 3px;
+  margin-bottom: 8px;
+  resize: vertical;
+  opacity: 0.7;
+  margin-bottom: 4%;
+}
+input[type=submit] {
+  background-color: #a4e5f5;
+  color:red;
+  font-weight:900;
+  padding: 10px 352px;
+  cursor: pointer;
+  opacity: 1;
+  margin-top: 4%;
+}
+input[type=number]{
+  opacity: 0.7;
+}
+
+input[type=password] {
+  opacity: 0.7;
+}
+#country{
+  margin-bottom: 30px;
+}
+input[type=submit]:hover {
+  background-color: #54e919;
+  opacity: 1;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.map{
+  border-width: 3px;
+  border-top-color: blueviolet;
+  border-left-color:greenyellow;
+  border-right-color:greenyellow;
+  border-bottom-color:blueviolet;
+  margin-left: 3%;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+
+    width: 100%;
+    margin-top: 0;
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 600px){
+  .map,.ifme{
+    width: 100% !important; 
+    height: 400px !important;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+}
+@media screen and (max-width: 600px){
+  .mslogo{
+    background-image: url("../images/mseclogo.png");
+    background-repeat: no-repeat;
+    background-position:top;
+    margin-top: 2%;
+    background-size:70%;
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: gold;
+}
+
+/* The Close Button */
+.close,.canc {
+  text-align: center;
+  color: rgb(219, 4, 4);
+  font-size: 28px;
+  font-weight: bolder;
+  }
+
+.canc{
+  float: right;
+}
+
+.canc:hover {
+  color: rgb(60, 255, 0);
+  cursor: pointer;
+}
+
+.ftr{
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  padding: 15px;
+}
+
+/*Glowing text*/
+.glowtxt {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 0.7s ease-in-out infinite alternate;
+  -moz-animation: glow 0.7s ease-in-out infinite alternate;
+  animation: glow 0.7s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 6px #fff, 0 0 10px #e60073, 0 0 14px #e60073, 0 0 16px #e60073, 0 0 18px #e60073, 0 0 20px #fff;
+  }
+  
+  to {
+    text-shadow: 0 0 6px #fff, 0 0 10px #ff4da6, 0 0 14px #ff4da6, 0 0 16px #ff4da6, 0 0 20px #ff4da6, 0 0 20px #ff4da6, 0 0 20px #fff;
+  }
+}
