@@ -7,7 +7,7 @@ input::-webkit-inner-spin-button {
 }
 .mslogo
 {
-    background-image: url("../images/mseclogo.png");
+    background-image: url("../mseclogo.png");
     background-repeat: no-repeat;
     background-position:right;
     background-size:30%;
