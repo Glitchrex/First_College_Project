@@ -1,0 +1,140 @@
+html::-webkit-scrollbar {
+  display: none;
+}
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+  
+  
+  /* Fixed sidenav, full height */
+  .sidnav {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 4px;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidnav a, .drpdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 4px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidnav a:hover, .drpdown-btn:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 150px; /* Same as the width of the sidenav */
+    font-size: 4px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: green;
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .drpdown-contain {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  .column2{
+    float: right;
+    height: 800px;
+    width: 87%;
+    overflow: hidden;
+    
+  }
+/*code  start for cgpa.html*/ 
+table, th
+{
+border: 1px solid black;
+height: 100px;
+width: 100%;
+text-align: center;
+color:gold;
+background-color: gray;
+border-collapse:separate;
+}
+
+td{
+    border: 1px solid rgb(0, 0, 0);
+    height: 100px;  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+table,th,td{
+  padding: .8%;
+}
+
+/*Register form*/
+.bg-img
+{
+  /*Photo by Adrien Olichon on Unsplash*/
+  background-image:url(../Images/adrien-olichon-ilVYjf0J378-unsplash.jpg);
+  height: 100% !important;
+}
+
+@media screen and (max-width: 400px) {
+  .sidenav a {
+    text-align: center;
+    float: none;
+  }
+}
+/*code  end for cgpa.html*/
+@media screen and (max-width: 700px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidenav a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/*Glowing text*/
+.glowtxt {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 1px #fff, 0 0 4px rgb(0, 0, 0), 0 0 7px rgb(240, 149, 12), 0 0 12px rgb(233, 196, 33), 0 0 17px rgb(252, 106, 9), 0 0 20px rgb(243, 220, 15),
+  }
+  
+  to {
+    text-shadow: 0 0 4px #fff, 0 0 7px rgb(224, 248, 4), 0 0 12px rgb(173, 241, 15), 0 0 17px rgb(221, 245, 4), 0 0 20px rgb(250, 174, 11);
+  }
+}
